@@ -1,0 +1,121 @@
+{
+  "version": 1,
+  "updatedAt": "2026-07-23T17:39:46.433Z",
+  "games": [
+    {
+      "slug": "another-world",
+      "title": "Another World",
+      "scenes": [
+        {
+          "id": "another-world-001",
+          "number": 1,
+          "original": "/gallery/another-world/001-original.webp",
+          "remaster": "/gallery/another-world/001-remaster.webp",
+          "thumbnail": "/gallery/another-world/001-thumbnail.webp",
+          "aiTool": "ChatGPT",
+          "createdAt": "2026-07-23T17:08:58.554Z",
+          "width": 600,
+          "height": 900
+        }
+      ]
+    },
+    {
+      "slug": "battlechess",
+      "title": "Battlechess",
+      "scenes": [
+        {
+          "id": "battlechess-001",
+          "number": 1,
+          "original": "/gallery/battlechess/001-original.webp",
+          "remaster": "/gallery/battlechess/001-remaster.webp",
+          "thumbnail": "/gallery/battlechess/001-thumbnail.webp",
+          "createdAt": "2026-07-23T11:12:06.688Z"
+        }
+      ]
+    },
+    {
+      "slug": "flashback",
+      "title": "Flashback",
+      "scenes": [
+        {
+          "id": "flashback-001",
+          "number": 1,
+          "original": "/gallery/flashback/001-original.webp",
+          "remaster": "/gallery/flashback/001-remaster.webp",
+          "thumbnail": "/gallery/flashback/001-thumbnail.webp",
+          "createdAt": "2026-07-23T11:12:06.688Z",
+          "width": 2048,
+          "height": 1296
+        }
+      ]
+    },
+    {
+      "slug": "heart-of-darkness",
+      "title": "Heart Of Darkness",
+      "scenes": [
+        {
+          "id": "heart-of-darkness-001",
+          "number": 1,
+          "original": "/gallery/heart-of-darkness/001-original.webp",
+          "remaster": "/gallery/heart-of-darkness/001-remaster.webp",
+          "thumbnail": "/gallery/heart-of-darkness/001-thumbnail.webp",
+          "createdAt": "2026-07-23T11:12:06.688Z"
+        },
+        {
+          "id": "heart-of-darkness-002",
+          "number": 2,
+          "original": "/gallery/heart-of-darkness/002-original.webp",
+          "remaster": "/gallery/heart-of-darkness/002-remaster.webp",
+          "thumbnail": "/gallery/heart-of-darkness/002-thumbnail.webp",
+          "createdAt": "2026-07-23T11:12:06.688Z"
+        }
+      ]
+    },
+    {
+      "slug": "rick-dangerous",
+      "title": "Rick Dangerous",
+      "scenes": [
+        {
+          "id": "rick-dangerous-001",
+          "number": 1,
+          "original": "/gallery/rick-dangerous/001-original.webp",
+          "remaster": "/gallery/rick-dangerous/001-remaster.webp",
+          "thumbnail": "/gallery/rick-dangerous/001-thumbnail.webp",
+          "createdAt": "2026-07-23T11:12:06.688Z"
+        }
+      ]
+    },
+    {
+      "slug": "toki",
+      "title": "Toki",
+      "scenes": [
+        {
+          "id": "toki-001",
+          "number": 1,
+          "original": "/gallery/toki/001-original.webp",
+          "remaster": "/gallery/toki/001-remaster.webp",
+          "thumbnail": "/gallery/toki/001-thumbnail.webp",
+          "createdAt": "2026-07-23T11:12:06.688Z",
+          "width": 505,
+          "height": 758
+        }
+      ]
+    },
+    {
+      "slug": "warcraft-ii",
+      "title": "Warcraft Ii",
+      "scenes": [
+        {
+          "id": "warcraft-ii-001",
+          "number": 1,
+          "original": "/gallery/warcraft-ii/001-original.webp",
+          "remaster": "/gallery/warcraft-ii/001-remaster.webp",
+          "thumbnail": "/gallery/warcraft-ii/001-thumbnail.webp",
+          "createdAt": "2026-07-23T11:12:06.688Z",
+          "width": 2048,
+          "height": 1106
+        }
+      ]
+    }
+  ]
+}

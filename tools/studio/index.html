@@ -1,0 +1,184 @@
+<!doctype html>
+<html lang="fr">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="studio-token" content="__STUDIO_TOKEN__" />
+    <title>RemasterIA Studio</title>
+    <link rel="stylesheet" href="/studio.css" />
+  </head>
+  <body>
+    <header class="topbar">
+      <div>
+        <p class="eyebrow">Studio local</p>
+        <h1>Remaster<span>IA</span> Studio</h1>
+        <p id="git-state" class="muted">Lecture du dépôt Git…</p>
+      </div>
+      <div class="publish-box">
+        <span id="pending-count">0 création à publier</span
+        ><a
+          id="open-site"
+          class="button"
+          target="_blank"
+          rel="noopener noreferrer"
+          hidden
+          >Ouvrir le site</a
+        ><button id="publish" class="button primary" disabled>
+          Publier les créations
+        </button>
+      </div>
+    </header>
+    <main>
+      <section class="card composer">
+        <form id="scene-form">
+          <div id="edit-banner" class="edit-banner" hidden>
+            <div>
+              <strong>Modification d’une création</strong
+              ><small
+                >Les champs laissés sans nouvelle image conserveront l’image
+                actuelle.</small
+              >
+            </div>
+            <button id="cancel-edit" type="button" class="button">
+              Annuler
+            </button>
+          </div>
+          <label class="field full"
+            ><span>Nom du jeu</span
+            ><input
+              id="title"
+              name="title"
+              list="games"
+              maxlength="100"
+              autocomplete="off"
+              placeholder="Another World"
+              required
+            /><datalist id="games"></datalist
+            ><small id="game-hint"
+              >Saisissez ou choisissez un jeu.</small
+            ></label
+          >
+          <div class="drops">
+            <label class="drop" id="original-drop"
+              ><input
+                id="original"
+                name="original"
+                type="file"
+                accept="image/jpeg,image/png,image/webp,image/avif,image/tiff"
+              /><span class="drop-title">Image originale</span
+              ><span class="drop-help">Glissez une image ici ou cliquez</span
+              ><img alt="" /><span class="file-meta"></span
+              ><button
+                type="button"
+                class="remove-file"
+                aria-label="Retirer l’image originale"
+              >
+                Retirer
+              </button></label
+            >
+            <label class="drop" id="remaster-drop"
+              ><input
+                id="remaster"
+                name="remaster"
+                type="file"
+                accept="image/jpeg,image/png,image/webp,image/avif,image/tiff"
+              /><span class="drop-title">Image remasterisée</span
+              ><span class="drop-help">Glissez une image ici ou cliquez</span
+              ><img alt="" /><span class="file-meta"></span
+              ><button
+                type="button"
+                class="remove-file"
+                aria-label="Retirer l’image remasterisée"
+              >
+                Retirer
+              </button></label
+            >
+          </div>
+          <label class="field full"
+            ><span>Outil IA <em>facultatif</em></span
+            ><input
+              id="ai-tool"
+              name="aiTool"
+              list="ai-tools"
+              maxlength="80"
+              placeholder="ChatGPT, Gemini, Midjourney…"
+            /><datalist id="ai-tools">
+              <option>ChatGPT</option>
+              <option>Gemini</option>
+              <option>Midjourney</option>
+              <option>Stable Diffusion</option>
+              <option>Flux</option>
+            </datalist></label
+          >
+          <div id="ratio-panel" class="ratio-panel" hidden>
+            <p id="ratio-message"></p>
+            <label
+              ><input type="radio" name="adapt" value="none" checked />
+              Conserver les images</label
+            ><label
+              ><input type="radio" name="adapt" value="remaster" /> Adapter le
+              remaster au format de l’original</label
+            ><label
+              ><input type="radio" name="adapt" value="original" /> Adapter
+              l’original au format du remaster</label
+            ><label
+              ><input type="radio" name="adapt" value="balanced" /> Adapter les
+              deux images à 50 %</label
+            >
+          </div>
+          <div id="preview-block" class="preview-block" hidden>
+            <div
+              id="comparator"
+              class="comparator"
+              role="slider"
+              tabindex="0"
+              aria-label="Comparaison avant après"
+              aria-valuemin="0"
+              aria-valuemax="100"
+              aria-valuenow="50"
+            >
+              <img id="preview-original" alt="Aperçu de l’image originale" />
+              <div id="preview-reveal">
+                <img
+                  id="preview-remaster"
+                  alt="Aperçu de l’image remasterisée"
+                />
+              </div>
+              <span id="divider"></span><b id="handle">↔</b>
+            </div>
+            <p id="format-summary" class="muted"></p>
+          </div>
+          <button id="add" class="button primary wide" disabled>
+            Ajouter à la galerie
+          </button>
+          <p id="form-status" class="status" role="status"></p>
+        </form>
+      </section>
+      <section class="card">
+        <div class="section-head">
+          <div>
+            <p class="eyebrow">Organisation</p>
+            <h2>Toutes les créations</h2>
+            <p class="muted">
+              Faites glisser les dossiers pour changer l’ordre global, ou les
+              créations pour les réordonner dans leur jeu.
+            </p>
+          </div>
+        </div>
+        <div id="creation-list" class="game-folders">
+          <p class="empty">Aucune création détectée.</p>
+        </div>
+      </section>
+    </main>
+    <dialog id="publish-dialog">
+      <h2>Publier les créations ?</h2>
+      <p id="publish-copy"></p>
+      <div id="publish-progress" class="progress"></div>
+      <div class="dialog-actions">
+        <button id="cancel-publish" class="button">Annuler</button
+        ><button id="confirm-publish" class="button primary">Publier</button>
+      </div>
+    </dialog>
+    <script src="/studio.js" defer></script>
+  </body>
+</html>

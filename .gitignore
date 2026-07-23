@@ -1,0 +1,12 @@
+node_modules/
+.next/
+.env
+.env.local
+.env.*.local
+coverage/
+playwright-report/
+test-results/
+*.tsbuildinfo
+netlify-ready/
+out/
+.gallery-migration-backup/
