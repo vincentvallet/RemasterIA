@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updatedAt": "2026-07-24T06:05:08.394Z",
+  "updatedAt": "2026-07-24T06:13:31.159Z",
   "games": [
     {
       "slug": "another-world",
@@ -15,9 +15,11 @@
           "aiTool": "ChatGPT",
           "createdAt": "2026-07-23T17:08:58.554Z",
           "width": 600,
-          "height": 900
+          "height": 900,
+          "order": 1
         }
-      ]
+      ],
+      "order": 1
     },
     {
       "slug": "battlechess",
@@ -31,7 +33,8 @@
           "thumbnail": "/gallery/battlechess/001-thumbnail.webp",
           "createdAt": "2026-07-23T11:12:06.688Z"
         }
-      ]
+      ],
+      "order": 2
     },
     {
       "slug": "flashback",
@@ -47,7 +50,8 @@
           "width": 2048,
           "height": 1296
         }
-      ]
+      ],
+      "order": 3
     },
     {
       "slug": "heart-of-darkness",
@@ -69,7 +73,8 @@
           "thumbnail": "/gallery/heart-of-darkness/002-thumbnail.webp",
           "createdAt": "2026-07-23T11:12:06.688Z"
         }
-      ]
+      ],
+      "order": 4
     },
     {
       "slug": "rick-dangerous",
@@ -83,7 +88,8 @@
           "thumbnail": "/gallery/rick-dangerous/001-thumbnail.webp",
           "createdAt": "2026-07-23T11:12:06.688Z"
         }
-      ]
+      ],
+      "order": 5
     },
     {
       "slug": "toki",
@@ -99,7 +105,8 @@
           "width": 505,
           "height": 758
         }
-      ]
+      ],
+      "order": 6
     },
     {
       "slug": "warcraft-ii",
@@ -115,7 +122,8 @@
           "width": 2048,
           "height": 1106
         }
-      ]
+      ],
+      "order": 7
     },
     {
       "slug": "sonic",
