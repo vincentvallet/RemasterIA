@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updatedAt": "2026-07-23T17:39:46.433Z",
+  "updatedAt": "2026-07-24T06:05:08.394Z",
   "games": [
     {
       "slug": "another-world",
@@ -114,6 +114,79 @@
           "createdAt": "2026-07-23T11:12:06.688Z",
           "width": 2048,
           "height": 1106
+        }
+      ]
+    },
+    {
+      "slug": "sonic",
+      "title": "Sonic",
+      "order": 8,
+      "scenes": [
+        {
+          "id": "sonic-001",
+          "number": 1,
+          "order": 1,
+          "original": "/gallery/sonic/001-original.webp",
+          "remaster": "/gallery/sonic/001-remaster.webp",
+          "thumbnail": "/gallery/sonic/001-thumbnail.webp",
+          "aiTool": "Grok",
+          "createdAt": "2026-07-24T05:50:53.328Z",
+          "width": 452,
+          "height": 678
+        },
+        {
+          "id": "sonic-002",
+          "number": 2,
+          "order": 2,
+          "original": "/gallery/sonic/002-original.webp",
+          "remaster": "/gallery/sonic/002-remaster.webp",
+          "thumbnail": "/gallery/sonic/002-thumbnail.webp",
+          "createdAt": "2026-07-24T05:54:20.543Z",
+          "width": 480,
+          "height": 348
+        },
+        {
+          "id": "sonic-003",
+          "number": 3,
+          "order": 3,
+          "original": "/gallery/sonic/003-original.webp",
+          "remaster": "/gallery/sonic/003-remaster.webp",
+          "thumbnail": "/gallery/sonic/003-thumbnail.webp",
+          "aiTool": "Grok",
+          "createdAt": "2026-07-24T05:55:22.144Z",
+          "width": 420,
+          "height": 280
+        }
+      ]
+    },
+    {
+      "slug": "grand-monster-slam",
+      "title": "Grand Monster Slam",
+      "order": 9,
+      "scenes": [
+        {
+          "id": "grand-monster-slam-001",
+          "number": 1,
+          "order": 1,
+          "original": "/gallery/grand-monster-slam/001-original.webp",
+          "remaster": "/gallery/grand-monster-slam/001-remaster.webp",
+          "thumbnail": "/gallery/grand-monster-slam/001-thumbnail.webp",
+          "aiTool": "ChatGPT",
+          "createdAt": "2026-07-24T06:04:47.707Z",
+          "width": 1024,
+          "height": 768
+        },
+        {
+          "id": "grand-monster-slam-002",
+          "number": 2,
+          "order": 2,
+          "original": "/gallery/grand-monster-slam/002-original.webp",
+          "remaster": "/gallery/grand-monster-slam/002-remaster.webp",
+          "thumbnail": "/gallery/grand-monster-slam/002-thumbnail.webp",
+          "aiTool": "Gemini",
+          "createdAt": "2026-07-24T06:05:08.394Z",
+          "width": 1448,
+          "height": 1086
         }
       ]
     }
